@@ -12,6 +12,7 @@ type DockerConfig struct {
 	Storage          *string `json:"storage,omitempty" flag:"storage-driver"`
 	InsecureRegistry *string `json:"insecureRegistry,omitempty" flag:"insecure-registry"`
 	MTU              *int    `json:"mtu,omitempty" flag:"mtu"`
+	LogOpts          *string `json:"logOpts,omitempty" flag:"log-opts"`
 }
 
 var validDockerConfigStorageValues = []string{"aufs", "btrfs", "devicemapper", "overlay", "overlay2", "zfs"}
